@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | MANYU444</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* HEADER */
+header{
+    background:#111;
+    color:#fff;
+    padding:20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:28px;
+}
+
+/* SECTION */
+section{
+    max-width:800px;
+    margin:30px auto;
+    padding:20px;
+}
+
+/* CARD */
+.card{
+    background:#fff;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* FORM */
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    margin-top:10px;
+    font-weight:bold;
+}
+
+input, textarea{
+    margin-top:5px;
+    padding:10px;
+    border-radius:5px;
+    border:1px solid #ccc;
+    font-size:14px;
+}
+
+textarea{
+    resize:none;
+}
+
+/* BUTTON */
+button{
+    margin-top:15px;
+    padding:12px;
+    background:#e60000;
+    color:#fff;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#c40000;
+}
+
+/* BACK BUTTON */
+a{
+    display:inline-block;
+    margin-top:15px;
+    text-decoration:none;
+    color:#fff;
+    background:#111;
+    padding:10px 15px;
+    border-radius:5px;
+}
+
+/* EMAIL BOX (ADDED) */
+.email-box{
+    margin-top:20px;
+    padding:15px;
+    background:#f0f0f0;
+    border-left:5px solid #e60000;
+    border-radius:5px;
+    font-size:15px;
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+    header h1{
+        font-size:22px;
+    }
+
+    .card{
+        padding:15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Contact MANYU444</h1>
+</header>
+
+<section>
+    <div class="card">
+
+        <form>
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Message</label>
+            <textarea rows="5" placeholder="Write your message..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <!-- ✅ ADDED EMAIL (WITHOUT REMOVING ANYTHING) -->
+        <div class="email-box">
+            📧 Email: <b>manyu444@gmail.com</b><br>
+            💬 You can also contact me directly via email for faster reply.
+        </div>
+
+        <a href="edit.html">⬅ Back to Home</a>
+
+    </div>
+</section>
+
+</body>
+</html>
